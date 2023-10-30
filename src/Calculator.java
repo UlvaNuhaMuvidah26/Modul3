@@ -11,26 +11,25 @@ public class Calculator {
     }
 
     // Metode penjumlahan,pengurangan,perkalian,pembagian
-     public double add() {
-             return operand1 + operand2;
-         }
+      public double add() {
+              return operand1 + operand2;
+          }
 
-         public double subtract() {
-             return operand1 - operand2;
-         }
+          public double subtract() {
+              return operand1 - operand2;
+          }
 
-         public double multiply() {
-             return operand1 * operand2;
-         }
-         public double divide() {
-             if (operand2 != 0) {
-                 return operand1 / operand2;
-             } else {
-                 // Melempar pengecualian jika operand2 adalah nol
-                 throw new ArithmeticException("Cannot divide by zero");
-             }
-         }
-
+          public double multiply() {
+              return operand1 * operand2;
+          }
+          public double divide() {
+              if (operand2 != 0) {
+                  return operand1 / operand2;
+              } else {
+                  // Melempar pengecualian jika operand2 adalah nol
+                  throw new ArithmeticException("Cannot divide by zero");
+              }
+          }
     public static void main(String[] args) {
         // Membuat objek Calculator dengan operand1=10.0 dan operand2=2.0
 
